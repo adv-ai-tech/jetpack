@@ -94,7 +94,7 @@ class Jetpack_WordAds_Shortcode {
 
 		$height  = WordAds::$ad_tag_ids[ $format ]['height'];
 		$width   = WordAds::$ad_tag_ids[ $format ]['width'];
-		$snippet = $wordads->get_ad_snippet( $section_id, $height, $width, 'inline', 'float:left;margin-right:5px;margin-top:0px;' );
+		$snippet = $wordads->get_ad_snippet( $section_id, $height, $width, 'inline', WordAds::$SOLO_UNIT_CSS );
 		return $wordads->get_ad_div( 'inline', $snippet, array( $align ) );
 	}
 }
