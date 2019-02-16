@@ -22,7 +22,7 @@ class Jetpack_WordAds_Shortcode {
 		}
 		add_shortcode( 'wordads', array( $this, 'wordads_shortcode' ) );
 
-		jetpack_register_block( 'wordads', array(
+		jetpack_register_block( 'jetpack/wordads', array(
 			'render_callback' => array( $this, 'gutenblock_render' ),
 		) );
 	}
